@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Grade 10th</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Highlight.js CSS for a dark theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #2d3748;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4fd1c5;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            margin-bottom: 1rem;
+        }
+        .code-block {
+            background-color: #171923;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-2">Complete C Language</h1>
+            <p class="text-xl text-gray-400">Structure and Fundamentals</p>
+        </header>
+
+        <main>
+            <!-- Structure of C Language -->
+            <div class="card">
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">Structure of C Language</h2>
+                <p>Everything has its own structure, and similarly, the C language also has its own specific structure. Let's examine what components are included in it.</p>
+                
+                <p><strong>1. Header File</strong></p>
+                <p><strong>2. Main Function</strong></p>
+                <p><strong>3. Body inside {}</strong></p>
+                <p><strong>4. return 0; at the end</strong></p>
+                
+                <p><strong>Header File: </strong>In this part, we need to define header files. You can think of it this way: before using functions, we need to include a header file where those functions are already defined so we can use them. It looks something like this:</p>
+                <p><strong>#include&lt;File_Name&gt;</strong></p>
+                
+                <p><strong>Main Function: </strong>To put it simply, this is a function where we write the body of our program. We'll see how to write it later, but for now, understand that this is our starting point. It's written like this:</p>
+                <p><strong>int main()</strong></p>
+                <p>You might wonder where "int" came from and think that "void" should be here instead, as often written in books. Actually, "int" is used here, and we'll learn about the difference between "int" and "void" later.</p>
+                
+                <p><strong>Body inside {}</strong>: These symbols { and } are called <strong>curly braces</strong>. We write all our code inside these braces. It looks like this:</p>
+                <p><strong>int main() {</strong></p>
+                <p><strong>// Write your program here</strong></p>
+                <p><strong>}</strong></p>
+                
+                <p><strong>return 0; at the end: </strong>Whenever our program finishes writing and there's nothing left to write, we often need to add "return 0;" at the end. This doesn't do much more than ensuring the program runs correctly. It indicates that the program executed successfully without any issues if the code was written correctly.</p>
+                
+                <p><strong>Full Example Code: </strong>You can see the complete example code below:</p>
+                
+                <pre><code class="language-c code-block">#include&lt;stdio.h&gt;
+
+int main() {
+    // Write your program here
+    return 0;
+}</code></pre>
+            </div>
+        </main>
+    </div>
+
+    <div class="footer">
+        <h2 class="text-xl font-semibold text-teal-300">Created and Designed by Najaf</h2>
+    </div>
+
+    <!-- Highlight.js to enable syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        // Tell Highlight.js to find and highlight all code blocks
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

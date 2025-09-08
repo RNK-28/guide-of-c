@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete C Language - Select Your Language</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .language-selection {
+            padding: 40px 20px;
+        }
+        
+        .language-selection h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .language-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .language-card {
+            width: 280px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .urdu-option {
+            border-top: 5px solid #3498db;
+        }
+        
+        .english-option {
+            border-top: 5px solid #e74c3c;
+        }
+        
+        .language-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .urdu-option .language-icon {
+            color: #3498db;
+        }
+        
+        .english-option .language-icon {
+            color: #e74c3c;
+        }
+        
+        .language-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .language-card p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .select-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        .urdu-option .select-btn {
+            background: #3498db;
+        }
+        
+        .english-option .select-btn {
+            background: #e74c3c;
+        }
+        
+        .select-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer {
+            padding: 20px;
+            background: #ecf0f1;
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .language-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Complete C Language</h1>
+            <p>Select your preferred language to continue</p>
+        </div>
+        
+        <div class="language-selection">
+            <h2>Select Your Language</h2>
+            
+            <div class="language-options">
+                <div class="language-card urdu-option" onclick="selectUrdu()">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Urdu</h3>
+                    <p>C language resources in Urdu</p>
+                    <a class="select-btn">Select Urdu</a>
+                </div>
+                
+                <div class="language-card english-option" onclick="selectEnglish()">
+                    <div class="language-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>C language resources in English</p>
+                    <a class="select-btn">Select English</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2023 Complete C Language. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function selectUrdu() {
+            window.location.href = "c by rnk2.html";
+        }
+        
+        function selectEnglish() {
+            window.location.href = "c by rnk2 eng.html";
+        }
+    </script>
+</body>
+</html>
