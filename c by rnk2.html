@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Science Grade 10th</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Highlight.js CSS for a dark theme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
     <style>
         body {
@@ -44,6 +43,28 @@
             font-size: 0.875rem;
             margin-top: 1rem;
         }
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            color: #a0aec0;
+        }
+        /* Back button styles */
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #4fd1c5;
+            color: #1a202c;
+            border-radius: 9999px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            background-color: #38b2ac;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
@@ -54,7 +75,6 @@
         </header>
 
         <main>
-            <!-- Act 2.4 -->
             <div class="card">
                 <h2 class="text-2xl font-semibold mb-4 text-teal-300">Structure of C language</h2>
                 <p>Har chez ka apna ek structure hota hai ese hi C language ka bhi apna ek structure hota hai chalo is ko dekhte hai ki is main kya cheze include hai.</p>
@@ -83,10 +103,13 @@ int main() {
 }</code></pre>
             </div>
         </main>
+        
+        <div class="text-center mt-8">
+            <a href="index.html" class="back-btn">← Wapis Language Selection Par Jayen</a>
+        </div>
     </div>
 	<h2 class="text-2xl font-semibold mb-4 text-teal-300">Created and Designed by Najaf</h2>
 
-    <!-- Highlight.js to enable syntax highlighting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script>
         // Tell Highlight.js to find and highlight all code blocks
